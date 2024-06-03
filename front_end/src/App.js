@@ -7,10 +7,11 @@ import Cart from './Pages/Cart';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import LoginSignup from './Pages/LoginSignup';
+import Popular from './Componenets/Popular/popular';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+       <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Shop/>}/>
@@ -22,6 +23,8 @@ function App() {
         </Route>
         <Route path='/Cart' element={<Cart/>}/>
         <Route path='/login' element={<LoginSignup/>}/>
+        <Route path='/popular' element={<Popular/>}/>
+        
       </Routes>
       </BrowserRouter>
 
